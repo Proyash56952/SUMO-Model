@@ -17,7 +17,7 @@
        <walk from="1i" to="2o"/>
    </personFlow> -->
 <vehicle depart="1" id="v01" route="r01" type="CarB"/>
-<vehicle depart="5" id="v02" route="r02" type="CarA"/>
-<vehicle depart="15" id="v03" route="r03" type="CarB"/>
-<vehicle depart="25" id="v04" route="r04" type="CarC"/>
+<vehicle depart="1" id="v02" route="r02" type="CarB"/>
+<vehicle depart="1" id="v03" route="r03" type="CarB"/>
+<vehicle depart="1" id="v04" route="r04" type="CarB"/>
 </routes>
