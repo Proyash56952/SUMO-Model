@@ -1,0 +1,23 @@
+<routes>
+  <vType accel="5.0" decel="6.0" id="CarA" length="5.0" minGap="2.5" maxSpeed="50.0" sigma="0.5" />
+  <vType accel="3.0" decel="6.0" id="CarB" length="7.5" minGap="2.5" maxSpeed="50.0" sigma="0.5" />
+  <vType accel="1.0" decel="5.0" id="CarC" length="5.0" minGap="2.5" maxSpeed="40.0" sigma="0.5" />
+  <vType accel="1.0" decel="5.0" id="CarD" length="7.5" minGap="2.5" maxSpeed="30.0" sigma="0.5" />
+  <route id="r01" edges="1i 4o"/>
+  <route id="r02" edges="1i 2o"/>
+  <route id="r03" edges="3i 4o"/>
+  <route id="r04" edges="4i 3o"/>
+  <person id="person_0" depart="0">
+        <walk edges="1i 2o" speed="0.25"/>
+   </person>
+  <person id="person_1" depart="0">
+        <walk edges="2i 1o" speed="0.5"/>
+   </person> 
+<!--<personFlow id="p" begin="0" end="10" period="5">
+       <walk from="1i" to="2o"/>
+   </personFlow> -->
+<vehicle depart="1" id="v01" route="r01" type="CarB"/>
+<vehicle depart="5" id="v02" route="r02" type="CarA"/>
+<vehicle depart="15" id="v03" route="r03" type="CarB"/>
+<vehicle depart="25" id="v04" route="r04" type="CarC"/>
+</routes>
